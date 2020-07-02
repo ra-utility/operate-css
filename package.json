@@ -1,0 +1,20 @@
+{
+    "name": "operateCSS",
+    "version": "1.0.0",
+    "description": "插入CSS工具，可以在<head>标签插入CSS代码，也可以给单个元素插入CSS。",
+    "main": "lib/dom.min.js",
+    "scripts": {
+        "build": "tsc",
+        "mini": "uglifyjs lib/dom.js -o lib/dom.min.js",
+        "terser": "terser lib/dom.js -o lib/dom.min.js"
+    },
+    "repository": "https://github.com/ra-utility/operateCSS.git",
+    "keywords": ["insertCSS", "insert", "css", "styleSheet"],
+    "author": "zhouzhechao <zhouzhechao@email.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "terser": "^4.8.0",
+        "tslint": "^6.1.2",
+        "uglify-js": "^3.10.0"
+    }
+}
