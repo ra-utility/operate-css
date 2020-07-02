@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "sourceMap": false,
+        "module": "commonjs", // 模块配置
+        "noImplicitAny": true, // 是否默认禁用 any
+        "baseUrl": ".",
+        "target": "es6", // 编译目标
+        "outDir": "lib", // 输出目录
+        "declaration": true // 是否自动创建类型声明
+    },
+    // 此配置生效范围
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "test/*"
+    ]
+}
