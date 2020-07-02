@@ -1,5 +1,5 @@
 {
-    "name": "operateCSS",
+    "name": "operate-css",
     "version": "1.0.0",
     "description": "插入CSS工具，可以在<head>标签插入CSS代码，也可以给单个元素插入CSS。",
     "main": "lib/dom.min.js",
