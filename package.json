@@ -1,6 +1,6 @@
 {
     "name": "operate-css",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "插入CSS工具，可以在<head>标签插入CSS代码，也可以给单个元素插入CSS。",
     "main": "lib/dom.min.js",
     "scripts": {
@@ -8,9 +8,14 @@
         "mini": "uglifyjs lib/dom.js -o lib/dom.min.js",
         "terser": "terser lib/dom.js -o lib/dom.min.js"
     },
-    "repository": "https://github.com/ra-utility/operateCSS.git",
-    "keywords": ["insertCSS", "insert", "css", "styleSheet"],
-    "author": "zhouzhechao <zhouzhechao@email.com>",
+    "repository": "https://github.com/ra-utility/operate-css.git",
+    "keywords": [
+        "insertCSS",
+        "insert",
+        "css",
+        "styleSheet"
+    ],
+    "author": "Rabbitzzc <zzclovelcs@gmail.com>",
     "license": "MIT",
     "devDependencies": {
         "terser": "^4.8.0",

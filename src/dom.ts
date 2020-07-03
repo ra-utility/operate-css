@@ -4,7 +4,14 @@ const createStyleElement = () => {
     return styleElement
 }
 
-const dom: Object = {
+
+interface DomOperation {
+    css({ el, styles }: { el: { style: { [x: string]: any } }; styles: { [x: string]: any } }): void;
+    getStyleValue({ el, attr }: { el: HTMLElement; attr: string; }): string;
+    insertCSS(css: string, options: { target?: any; prepend?: boolean }): HTMLElement | undefined;
+}
+
+const dom: DomOperation = {
     // 设置样式
     css({ el, styles }: { el: { style: { [x: string]: any } }; styles: { [x: string]: any } }) {
         if (!el) return
@@ -48,9 +55,7 @@ const dom: Object = {
         } else {
             styleElement.textContent += css
         }
-
         return styleElement
-        
     }
 }
 
